@@ -1,6 +1,6 @@
 # Scoping, IIFEs, let and const, hoisting
 
-* var is functionally scoped not blocked scoped.
+* var is __functionally scoped__ not blocked scoped.
 * Js automatically creates undeclared variables (existing inside of functions and blocks) to global scope (but during phase 2) (also only if strict mode isn’t enabled)
 ```javascript
 
@@ -44,9 +44,9 @@ console output for lines 259 - 272
 >> 9
  */
  ```
-* Js is a lexically scoped language I.e. all scopes are decided during compile time.
-* JS program runs in two phases: compilation phase and execution phase. In the first phase all the formal declarations and statements starting with “function” are compiled and their scope is set. During the second phase all the assignments, function calls etc are executed ( source and target references are decided)
-* IIFE - immediately invoked function expression. Variables declared inside it cannot be accessed outside the life scope. Prevents polluting scope.
+* Js is a __lexically scoped__ language I.e. all scopes are decided during compile time.
+* JS program runs in two phases: __compilation phase__ and __execution phase__. In the first phase all the formal declarations and statements starting with “function” are compiled and their scope is set. During the second phase all the assignments, function calls etc are executed ( source and target references are decided)
+* __IIFE - immediately invoked function expression__. Variables declared inside it cannot be accessed outside the life scope. Prevents polluting scope.
 ```javascript
 // IIFE - immediately invoked function expressions--------------------
 var v1 = 1;
@@ -73,7 +73,7 @@ var iifeVar = (function() {
 
 console.log("iifeVar = " + iifeVar); // iifeVar = 1
 ```
-* Let and const are block scoped.
+* Let and const are __block scoped__.
 ```javascript
 // Blocked scoped statements---------------------------------------------
 
@@ -115,7 +115,7 @@ const stringArrayVar = ["hello", "bye", "good morning"];
 stringArrayVar[2] = "good night"; // allowed
 console.log(stringArrayVar);
 ```
-* Const variables cannot be reassigned and have to be assigned a value when they are declared. (They can be mutated though like changing a particular index of a const array.)
+* __Const__ variables cannot be reassigned and have to be assigned a value when they are declared. (They can be mutated though like changing a particular index of a const array.)
 * Function declarations are hoisted. 
 * Function expressions are not hoisted as the assignment takes place in the execution phase (target reference). But it should be remembered that the function on the RHS of an function expression is compiled and assigned scope in the compilation phase. Also function part of a function expression takes its own scope.
 * When var hoists, js assigns it to undefined
@@ -137,7 +137,7 @@ function f2() {
 ```
 * When let hoists, js creates a space in memory by the name of the identifier but doesn’t assign it any value.
 
-An example on hoisting:
+#### An example on hoisting:
 ```javascript
 //hoisting----------------------------------------------------------------
 
