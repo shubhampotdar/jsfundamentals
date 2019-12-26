@@ -26,5 +26,5 @@ var clf = function() {
   console.log(v1);
 };
 v1 = "bbb";
-clf();
+clf(); //bbb
 ```
