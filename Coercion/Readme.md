@@ -1,1 +1,1 @@
-[a relative link](typeof.md)1. Typeof operator
+[1. Typeof operator](/typeof.md)
