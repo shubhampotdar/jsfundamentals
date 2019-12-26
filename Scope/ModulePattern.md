@@ -51,7 +51,7 @@ export default function ask(question) {
 
 #### Importing a module
 * Named import syntax:
-````javascript
+```javascript
 import ask from "workshop.mjs";
 
 ask("Default import");
