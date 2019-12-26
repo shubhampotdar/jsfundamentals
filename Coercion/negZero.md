@@ -1,4 +1,4 @@
-,,,javascript
+```javascript
 var negZeroVar = -0;
 console.log(negZeroVar===-0); //returns true (ofc)
 console.log(negZeroVar===0); // returns true
@@ -21,4 +21,4 @@ var v = numBeChecked => {
 	return numBeChecked !== 0 ? Math.sign(numBeChecked) : Object.is(numBeChecked,-0) ? -1:1;
 
 }
-,,,
+```
