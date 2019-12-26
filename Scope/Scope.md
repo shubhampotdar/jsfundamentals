@@ -74,6 +74,47 @@ var iifeVar = (function() {
 console.log("iifeVar = " + iifeVar); // iifeVar = 1
 ```
 * Let and const are block scoped.
+```javascript
+// Blocked scoped statements---------------------------------------------
+
+var v3 = 5;
+var v22 = 225;
+{
+  //var v3 = 7;
+  console.log(v3); // undefined
+  let v3 = 7;
+  console.log(v3); // 7
+  var v4 = 99;
+  let v5 = 199;
+  v22++;
+}
+console.log(v3); // 5
+console.log(v4); // 99
+console.log("v22= " + v22); //226
+// console.log(v5);  - error(not defined)
+```
+
+```javascript
+// const----------------------------------------------------------------
+// const variables cannot be reassigned and have to be assigned a value when created
+// block scoped
+const a = 0;
+// a++;  error - a is read only
+// a = 2;  error - a is read only
+
+{
+  const a = 11;
+  console.log("inside block " + a); // 11
+  const b = 22;
+}
+console.log(a); // 0
+//console.log(b); //error - reference error
+
+const stringArrayVar = ["hello", "bye", "good morning"];
+// stringArrayVar = "no"; error - read only
+stringArrayVar[2] = "good night"; // allowed
+console.log(stringArrayVar);
+```
 * Const variables cannot be reassigned and have to be assigned a value when they are declared. (They can be mutated though like changing a particular index of a const array.)
 * Function declarations are hoisted. 
 * Function expressions are not hoisted as the assignment takes place in the execution phase (target reference). But it should be remembered that the function on the RHS of an function expression is compiled and assigned scope in the compilation phase. Also function part of a function expression takes its own scope.
