@@ -1,1 +1,1 @@
-[1. Typeof operator](/Typeof.md)
+[1. Typeof operator](./Typeof.md)
