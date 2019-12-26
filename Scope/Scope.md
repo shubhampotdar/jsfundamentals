@@ -1,4 +1,4 @@
-# Scoping
+# Scoping, IIFEs, let and const, hoisting
 
 * var is functionally scoped not blocked scoped.
 * Js automatically creates undeclared variables (existing inside of functions and blocks) to global scope (but during phase 2) (also only if strict mode isn’t enabled)
