@@ -137,3 +137,31 @@ function f2() {
 ```
 * When let hoists, js creates a space in memory by the name of the identifier but doesn’t assign it any value.
 
+An example on hoisting:
+```javascript
+//hoisting----------------------------------------------------------------
+
+func1();
+
+function func1() {
+  console.log("func1");
+}
+
+// func2(); // typeerror
+var func2 = () => console.log("func2");
+
+v6 = "variable 6";
+console.log(v6); // variable 6
+var v6;
+
+// when var hoists js initializes it to undefined
+// when let hoists js creates a space in memory but doesnt assign it any value
+
+var v7 = "emp";
+
+{
+  console.log(v7); // reference error (tdz)
+  let v7 = "col";
+}
+```
+
