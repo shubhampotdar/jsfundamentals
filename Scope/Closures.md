@@ -28,3 +28,16 @@ var clf = function() {
 v1 = "bbb";
 clf(); //bbb
 ```
+</br>
+
+```javascript
+for(var i=1;i<=3;i++)
+{
+  setTimeout(function(){
+    console.log(i);
+  },1000);
+}
+// 4
+// 4
+// 4
+```
