@@ -48,5 +48,21 @@ export default function ask(question) {
   console.log(teacher,question);
 };
 ```
+#### Importing a module
+* Named import syntax:
+````javascript
+import ask from "workshop.mjs";
+
+ask("Default import");
+```
+</br>
+* Namespace import syntax
+````javascript
+impert * as workshop from "workshop.mjs";
+
+workshop.ask("Namespace import");
+```
+
+
 
  
