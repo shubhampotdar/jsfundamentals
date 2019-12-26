@@ -58,9 +58,9 @@ ask("Default import");
 ```
 
 </br>
-* Namespace import syntax
+* Namespace import syntax:
 ```javascript
-impert * as workshop from "workshop.mjs";
+import  as workshop from "workshop.mjs";
 
 workshop.ask("Namespace import");
 ```
