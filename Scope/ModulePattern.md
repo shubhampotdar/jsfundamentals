@@ -56,8 +56,6 @@ import ask from "workshop.mjs";
 
 ask("Default import");
 ```
-
-</br>
 * Namespace import syntax:
 ```javascript
 import  as workshop from "workshop.mjs";
