@@ -37,4 +37,16 @@ function WorkshopModule(teacher) {
 var ws = WorkshopModule("Shu");
 ws.ask("Module?"); // Shu Module?
 ```
+</br></br>
+### ES6 module pattern
+
+####workshop.mjs
+```javascript
+var teacher = "Shu";
+
+export default function ask(question) {
+  console.log(teacher,question);
+};
+```
+
  
