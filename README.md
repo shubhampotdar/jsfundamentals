@@ -1,4 +1,4 @@
 # JS Fundamentals
 ## Contents:
-[1. Types and Coercion](/Coercion)
-2. Scoping
+[1. Types and Coercion](/Coercion) </br>
+[2. Scoping](/Scoping)
