@@ -1,3 +1,4 @@
+# Static typing
 ```javascript
 /*------------------static typing using Type script -----------------------------
 
