@@ -1,4 +1,4 @@
-# NaN - invalid number (~~ Not a number ~~)
+# NaN - invalid number (~~Not a number~~)
 * Only value in JS which is not equal to itself </br>
 * A NaN number with any mathematical operation results in NaN </br>
 * Strings when coerced to a number return NaN </br>
