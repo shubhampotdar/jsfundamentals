@@ -18,3 +18,23 @@ var workshop = (function Module(teacher) {
 
 workshop.ask("Helllooooo"); // Shu Helllooooo
 ```
+</br></br>
+
+### Module Factory
+
+```javascript
+//Module Factory 
+function WorkshopModule(teacher) {
+  var publicAPI = { ask, };
+  return publicAPI;
+
+  //******* 
+  function ask(question) {
+    console.log(teacher,question);
+  }
+};
+
+var ws = WorkshopModule("Shu");
+ws.ask("Module?"); // Shu Module?
+```
+ 
