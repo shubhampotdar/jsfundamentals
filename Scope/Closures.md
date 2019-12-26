@@ -17,3 +17,6 @@ function abc(val) {
 var retFunc = abc(2);
 retFunc(); //2
 ```
+</br>
+
+Closure doesnt store a snapshot of closed variables but stores a linkage. so when a closed variable is accessed, it returns the value that variable holds at that particular time.
