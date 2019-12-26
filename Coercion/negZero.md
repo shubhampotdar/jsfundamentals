@@ -1,3 +1,4 @@
+# Negative Zero (-0)
 ```javascript
 var negZeroVar = -0;
 console.log(negZeroVar===-0); //returns true (ofc)
