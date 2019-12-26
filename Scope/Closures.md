@@ -30,6 +30,8 @@ clf(); //bbb
 ```
 </br>
 
+### Example of closure with for loop
+
 ```javascript
 for(var i=1;i<=3;i++)
 {
