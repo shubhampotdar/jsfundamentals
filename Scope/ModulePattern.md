@@ -1,6 +1,6 @@
 # Modules
 Modules encapsulate data and behavior (methods) together. The state (data) of a module is held by its methods via closure.
-
+</br></br>
 ### Classic/Revealing Module Pattern
 An IIFE is used so it is a singleton module.
 
