@@ -51,6 +51,22 @@ console output for lines 259 - 272
 * Const variables cannot be reassigned and have to be assigned a value when they are declared. (They can be mutated though like changing a particular index of a const array.)
 * Function declarations are hoisted. 
 * Function expressions are not hoisted as the assignment takes place in the execution phase (target reference). But it should be remembered that the function on the RHS of an function expression is compiled and assigned scope in the compilation phase. Also function part of a function expression takes its own scope.
-* When var hoists, js assigns it to undefined.
+* When var hoists, js assigns it to undefined
+```javascript
+
+f2();
+var fe1 = 1;
+function f2() {
+	console.log(fe1);    // undefined
+ 	var fe1 = 2;
+	console.log(fe1);   //   2
+
+	function abc() {
+		console.log(fe1);    // 2
+	}
+
+	abc();
+}
+```
 * When let hoists, js creates a space in memory by the name of the identifier but doesn’t assign it any value.
 
