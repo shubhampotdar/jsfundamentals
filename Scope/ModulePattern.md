@@ -40,7 +40,7 @@ ws.ask("Module?"); // Shu Module?
 </br></br>
 ### ES6 module pattern
 
-####workshop.mjs
+#### workshop.mjs
 ```javascript
 var teacher = "Shu";
 
