@@ -1,3 +1,4 @@
+# typeof operator
 Returns type of the string </br>
 Return type is a non-empty string
 </br>
