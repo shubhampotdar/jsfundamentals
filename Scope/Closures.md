@@ -43,3 +43,30 @@ for(var i=1;i<=3;i++)
 // 4
 // 4
 ```
+
+But if in every iteration, a let(block-scoped) j is assigned to i. Then:
+``` javascript
+for(var i=1;i<=3;i++)
+{
+  let j=i;
+  setTimeout(function(){
+    console.log(j);
+  },1000);
+}
+// 1
+// 2
+// 3
+```
+In ES6, this was changed to:
+```javascript
+for(let i=1;i<=3;i++)
+{
+  setTimeout(function(){
+    console.log(i);
+  },1000);
+}
+// 1
+// 2
+// 3
+```
+
