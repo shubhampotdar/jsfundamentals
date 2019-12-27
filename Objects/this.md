@@ -52,6 +52,7 @@ workshop.ask("Implicit binding");
 ```
 </br>
 In this way we can **share** a function across different objects. Below the ask function is called by the context of two different objects.
+
 ```javascript
 function ask(question) {
   console.log(this.teacher,question);
