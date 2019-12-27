@@ -22,3 +22,19 @@ function (enclosing scope). The this keyword inside of ask
 is determined by its call-site i.e. workshop.ask() . And then when 
 that callback is later invoked it is essentially closed over 
 that parent scope that had a this keyword pointing at the workshop object. So it is not a hard bound function.
+
+### Resolving this in arrow functions
+```javascript
+var workshop = {
+  teacher: "kyle",
+  ask: (question) => {
+      console.log(this.teacher,question);
+  },
+};
+
+workshop.ask("why");
+workshop.ask.call(workshop,"whyyyy");
+
+// undefined why
+// undefined whyyy
+```
