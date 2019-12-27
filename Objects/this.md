@@ -34,7 +34,7 @@ kyle why
 Suzy why
 */
 ```
-
+</br></br></br>
 ## Implicit binding
 
 ```javascript
@@ -50,4 +50,23 @@ workshop.ask("Implicit binding");
 
 //Shu Implicit binding
 ```
+</br>
+In this way we can **share** a function across different objects. Below the ask function is called by the context of two different objects.
+```javascript
+function ask(question) {
+  console.log(this.teacher,question);
+}
 
+var workshop1 = {
+  teacher: "Kyle",
+  ask:ask,
+}
+
+var workshop2 = {
+  teacher: "suzy",
+  ask:ask,
+}
+
+workshop1.ask("what"); // Kyle what
+workshop2.ask("why"); // suzy why
+```
