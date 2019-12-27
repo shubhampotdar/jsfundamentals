@@ -16,7 +16,7 @@ workshop.ask("lexical this");
 ```
 
 So in the arrow function (callback of setTimeout), 
-there is no this defined no matter how it ges invoked. 
+there is no this defined no matter how it gets invoked. 
 So we lexically go up one level of scope which is the "ask"
 function (enclosing scope). The this keyword inside of ask 
 is determined by its call-site i.e. workshop.ask() . And then when 
