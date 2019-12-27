@@ -43,3 +43,24 @@ bb.ask("why");
 
 //kyle what
 ```
+#### super keyword
+```javascript
+ class Workshop {
+   constructor(teacher) {
+     this.teacher = teacher;
+   }
+   ask(question) {
+     console.log(this.teacher,question);
+   }
+ }
+
+ class AnotherWorkshop extends Workshop {
+   ask(msg) {
+     super.ask(msg.toUpperCase());
+   }
+ }
+
+ var aa =new AnotherWorkshop("kyle");
+ aa.ask("what");
+ // kyle WHAT 
+ ```
