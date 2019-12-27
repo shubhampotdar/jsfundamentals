@@ -34,3 +34,20 @@ kyle why
 Suzy why
 */
 ```
+
+## Implicit binding
+
+```javascript
+var teacher = "abc";
+var workshop = {
+  teacher: "Shu",
+  ask(question) {
+    console.log(this.teacher,question);
+  },
+};
+
+workshop.ask("Implicit binding");
+
+//Shu Implicit binding
+```
+
