@@ -14,3 +14,11 @@ var workshop = {
 workshop.ask("lexical this");
 // kyle lexical this
 ```
+
+So in the arrow function (callback of setTimeout), 
+there is no this defined no matter how it ges invoked. 
+So we lexically go up one level of scope which is the "ask"
+function (enclosing scope). The this keyword inside of ask 
+is determined by its call-site i.e. workshop.ask() . And then when 
+that callback is later invoked it is essentially closed over 
+that parent scope that had a this keyword pointing at the workshop object. So it is not a hard bound function.
