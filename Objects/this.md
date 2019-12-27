@@ -71,3 +71,25 @@ var workshop2 = {
 workshop1.ask("what"); // Kyle what
 workshop2.ask("why"); // suzy why
 ```
+</br></br></br>
+## Explicit binding
+Can be done using the "call" keyword:
+```javascript
+function ask(question) {
+  console.log(this.teacher,question);
+}
+
+var workshop1 = {
+  teacher: "kyle",
+};
+
+var workshop2 = {
+  teacher: "Suzy",
+}
+
+ask.call(workshop1,"how");
+ask.call(workshop2,"when");
+
+//kyle how
+//Suzy when
+```
