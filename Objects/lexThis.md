@@ -38,3 +38,4 @@ workshop.ask.call(workshop,"whyyyy");
 // undefined why
 // undefined whyyy
 ```
+In this example, the this keyword is inside an arrow function. So it behaves like a normal variable and lexically searches for its context. There are only two scopes in the above example - the arrow function and the global scope (objects are not scopes). So it lexcially falls back to the global scope in search of the this keyword and therefore returns undefined.
