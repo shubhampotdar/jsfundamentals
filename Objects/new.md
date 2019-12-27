@@ -5,6 +5,8 @@ The following happens when the new keyword is used to invoke a function:
 3. Call function with this set to the new object.
 4. If function does not return an object,assume return of this.
 
+</br>
+
 Constructor call:
 ```javascript
 function ask(question) {
