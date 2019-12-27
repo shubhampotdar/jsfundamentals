@@ -93,3 +93,19 @@ ask.call(workshop2,"when");
 //kyle how
 //Suzy when
 ```
+</br></br></br>
+## Hard binding
+```javascript
+var workshop = {
+  teacher: "Shu",
+  ask(question) {
+    console.log(this.teacher,question);
+  },
+};
+
+setTimeout(workshop.ask,10,"when");
+// undefined when
+
+setTimeout(workshop.ask.bind(workshop),10,"who");
+// Shu who 
+```
