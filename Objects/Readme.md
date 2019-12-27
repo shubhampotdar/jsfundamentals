@@ -1,4 +1,4 @@
 # Objects
 
-1.[ this keyword](./this.md) </br>
-2. 
+1.[ this keyword, implicit and explicit binding](./this.md) </br>
+2.[ new keyword](./new.md) </br>
