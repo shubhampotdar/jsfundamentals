@@ -6,3 +6,4 @@
 4.[ Binding precedence](./bindingPrecedence.md) </br>
 5.[ Arrow functions and lexical this](./lexThis.md) </br>
 6.[ class Keyword](./class.md) </br>
+7.[ Prototypes](/Prototypes) 
