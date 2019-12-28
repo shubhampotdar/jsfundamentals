@@ -44,6 +44,7 @@ bb.ask("why");
 //kyle what
 ```
 #### super keyword
+The super keyword can be used to perform relative polymorphism.
 ```javascript
  class Workshop {
    constructor(teacher) {
