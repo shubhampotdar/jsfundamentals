@@ -67,7 +67,7 @@ The super keyword can be used to perform relative polymorphism.
  aa.ask("what");
  // kyle WHAT 
  ```
- </br>
+ </br></br>
  
  ### Still dynamic this
  
@@ -86,4 +86,21 @@ var aa = new Workshop("shu");
 
 setTimeout(aa.ask,100,"still losing this");
 // undefined still losing this
+```
+</br>
+
+Fixing the above problem:
+```javascript
+class Workshop {
+  constructor(teacher) {
+    this.teacher = teacher;
+    this.ask = question => console.log(this.teacher,question);
+  }
+}
+
+
+var aa = new Workshop("shu");
+
+setTimeout(aa.ask,100,"this fixed");
+// shu this fixed
 ```
