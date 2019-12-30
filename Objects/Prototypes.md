@@ -85,4 +85,32 @@ deepJS.ask = function(question) {
 deepJS.ask("why");
 ```
 
+</br></br>
+
+## Prototypal inheritance
+
+```javascript
+function Workshop(teacher) {
+  this.teacher = teacher;
+}
+
+Workshop.prototype.ask = function(question){
+  console.log(this.teacher,question);
+};
+
+function AnotherWorkshop(teacher) {
+  Workshop.call(this,teacher);
+}
+
+AnotherWorkshop.prototype = Object.create(Workshop.prototype);
+
+AnotherWorkshop.prototype.speakUp = function(msg) {
+  this.ask(msg.toUpperCase());
+};
+
+var aa = new AnotherWorkshop("kyle");
+aa.speakUp("inheritance");
+// kyle INHERITANCE
+```
+
 
