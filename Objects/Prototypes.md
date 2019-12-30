@@ -88,7 +88,7 @@ deepJS.ask("why");
 </br></br>
 
 ## Prototypal inheritance
-
+Inheritance can be performed in prototypes by liking their objects together.
 ```javascript
 function Workshop(teacher) {
   this.teacher = teacher;
