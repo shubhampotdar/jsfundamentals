@@ -19,3 +19,7 @@ deepJS.ask("what");
 reactJS.ask("why");
 // kyle why
 ```
+</br>
+
+The prototype chain for the above snippet is shown below:
+
