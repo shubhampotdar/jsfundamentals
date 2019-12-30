@@ -66,5 +66,23 @@ deepJS.ask = function(question) {
 }
 deepJS.ask("Infinite recursion");
 ```
+</br>
+The following fix can allow polymorphism to be performed:
+
+```javascript
+function Workshop(teacher) {
+  this.teacher = teacher;
+}
+
+Workshop.prototype.ask = function(question){
+  console.log(this.teacher,question);
+}
+
+var deepJS = new Workshop("shu");
+deepJS.ask = function(question) {
+  this.__proto__.ask.call(this,question);
+}
+deepJS.ask("why");
+```
 
 
