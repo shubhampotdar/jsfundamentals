@@ -9,12 +9,12 @@ Workshop.prototype.ask = function(question){
   console.log(this.teacher,question);
 }
 
-var aa = new Workshop("shu");
-var bb = new Workshop("kyle");
+var deepJS = new Workshop("shu");
+var reactJS = new Workshop("kyle");
 
-aa.ask("what");
-// shu what
+deepJS.ask("what");
+//shu what
 
-bb.ask("why");
+reactJS.ask("why");
 // kyle why
 ```
