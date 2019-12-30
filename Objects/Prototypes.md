@@ -27,3 +27,20 @@ The prototype chain for the above snippet is shown below:
 
 <img src="./prototypeChain.png">
 
+</br></br>
+
+## Dunder proto
+Dunder proto i.e. Object.__proto__  is used to move one object up the prototype chain. Dunder proto is basically a getter function in Object.prototype
+```javascript
+console.log(
+  deepJS.constructor === Workshop
+); // true
+console.log(
+  deepJS.__proto__ === Workshop.prototype
+); // (dunder proto) true
+
+console.log(
+  Object.getPrototypeOf(deepJS) === Workshop.prototype
+); // true
+```
+
