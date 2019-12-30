@@ -45,3 +45,26 @@ console.log(
 ); // true
 ```
 
+</br></br>
+
+## Shadowing of prototypes
+Here, we are adding a ask function to the deepJS object when there already is an ask function in the prototype of Workshop.
+The following code would lead to an infinite recursion as it keeps calling the ask function in the deepJS object.
+
+```javascript
+function Workshop(teacher) {
+  this.teacher = teacher;
+}
+
+Workshop.prototype.ask = function(question){
+  console.log(this.teacher,question);
+}
+
+var deepJS = new Workshop("shu");
+deepJS.ask = function(question) {
+  this.ask(question);
+}
+deepJS.ask("Infinite recursion");
+```
+
+
