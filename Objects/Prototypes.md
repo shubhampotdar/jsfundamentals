@@ -22,7 +22,7 @@ reactJS.ask("why");
 </br>
 
 The prototype chain for the above snippet is shown below:
-</br> Circles are functions and squares are objects.
+</br> (Circles are functions and squares are objects.)
 
 </br></br>
 
