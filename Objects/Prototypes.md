@@ -1,4 +1,4 @@
-# Prototypal Class
+## Prototypal Class
 
 The following snippet resembles a class as implemented using prototypes.
 ```javascript
