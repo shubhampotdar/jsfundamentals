@@ -69,4 +69,14 @@ for(let i=1;i<=3;i++)
 // 2
 // 3
 ```
+Another approach to solving this problem is through an IIFE :
+```javascript
+for(var i=1;i<=3;i++) {
+  (function(i){
+    setTimeout(function(){
+    console.log(i);
+  },1000);
+  })(i);
+}
+```
 
