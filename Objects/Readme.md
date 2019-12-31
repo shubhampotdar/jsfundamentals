@@ -1,7 +1,7 @@
 # Objects
 
 1.[ this keyword, implicit and explicit binding](./this.md) </br>
-2.[ Difference between call(),apply() and bind()](./diffCAB.md) </br>
+2.[ Difference between call(), apply() and bind()](./diffCAB.md) </br>
 3.[ new keyword](./new.md) </br>
 4.[ Default binding](./defaultBinding.md)</br>
 5.[ Binding precedence](./bindingPrecedence.md) </br>
