@@ -1,4 +1,4 @@
-# Objects
+# Object Oriented JavaScript
 
 1.[ this keyword, implicit and explicit binding](./this.md) </br>
 2.[ Difference between call(), apply() and bind()](./diffCAB.md) </br>
