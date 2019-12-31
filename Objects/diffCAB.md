@@ -72,7 +72,7 @@ ghi.bind(obj4, "What's up")();
 
 
 </br></br>
-#### TL;DR
+### TL;DR
 Call/apply call the function immediately, whereas bind returns a function that, when later executed, will have the correct context set for calling the original function. This way you can maintain context in async callbacks and events.
 
 
