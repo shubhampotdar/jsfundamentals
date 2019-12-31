@@ -70,6 +70,8 @@ ghi.bind(obj4, "What's up")();
 // What's up Suzy?
 ```
 
+In the above example the JS engine is creating a new ghi instance and binding obj3 as its this variable. It __copies__ the ghi function.
+
 
 </br></br>
 ### TL;DR
