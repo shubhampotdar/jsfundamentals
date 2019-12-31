@@ -46,7 +46,7 @@ def.apply(obj1, empName);
 
 ## bind()
 The bind() method creates a new function that, when called, has its this keyword set to the provided value.
-.bind allows you to set the this value now while allowing you to execute the function in the future, because it returns a new function object.
+__.bind__ allows you to set the "this" value now while allowing you to execute the function in the future, because it returns a new function object.
 
 ```javascript
 
