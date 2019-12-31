@@ -4,3 +4,6 @@ These 3 functions are all designed to set context, or more specifically, what __
 
 </br></br>
 
+## call()
+
+
