@@ -36,7 +36,9 @@ var v = numBeChecked => {
 
 }
 ```
+
 </br>
+
 ### Other examples
 ```javascript
 console.log(negZeroVar<0); // returns false
@@ -45,7 +47,7 @@ console.log(negZeroVar>0); // returns false
 ```javascript
 console.log( " " + Math.sign(-0)); // returns 0 
 ```
-The last statement evaluates to console.log(" "-0)). as strings cannot be subtracted, the space is coerced to a number and then 0-0 is performed.
+The last statement evaluates to console.log(" "-0)). as strings cannot be subtracted, the space is coerced to a number and then 0-0 is performed. </br>
 Refer : <https://stackoverflow.com/a/24383847>   (difference in behaviour of + and - operators in between strings)
 
 
