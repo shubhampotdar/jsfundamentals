@@ -17,7 +17,7 @@ var workshop = (function Module(teacher) {
 
 workshop.ask("Helllooooo"); // Shu Helllooooo
 ```
-
+In the following example, only the members play, pause, showNextTrack and addTrackToMusicQueue are public whereas others are hidden to the outside scope.
 ```javascript
 var musicPlayer = function () {
   // Let's make sure no one can directly access our songList
