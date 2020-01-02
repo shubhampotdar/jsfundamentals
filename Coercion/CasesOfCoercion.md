@@ -61,3 +61,8 @@ if(whiteSpaceVar)         // " " is whitespace which is not a falsy value so con
 ```javascript
 console.log(stringVar.length); //string is a primitive type but yet has methods as boxing takes place
 ```
+
+</br>
+
+* 
+
