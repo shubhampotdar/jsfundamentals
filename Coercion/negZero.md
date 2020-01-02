@@ -30,6 +30,7 @@ console.log( Math.sign(-0) ); // returns -0
 ```
 </br>
 The following snippet is a fix for returning -1 or 1 for zero and negative zero as well.
+
 ```javascript
 var v = numBeChecked => {
 	return numBeChecked !== 0 ? Math.sign(numBeChecked) : Object.is(numBeChecked,-0) ? -1:1;
@@ -44,6 +45,7 @@ var v = numBeChecked => {
 console.log(negZeroVar<0); // returns false
 console.log(negZeroVar>0); // returns false
 ```
+
 ```javascript
 console.log( " " + Math.sign(-0)); // returns 0 
 ```
