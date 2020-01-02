@@ -37,7 +37,7 @@ for(var i=1;i<=3;i++)
 {
   setTimeout(function(){
     console.log(i);
-  },1000);
+  },0);
 }
 // 4
 // 4
@@ -50,7 +50,7 @@ for(var i=1;i<=3;i++)
   let j=i;
   setTimeout(function(){
     console.log(j);
-  },1000);
+  },0);
 }
 // 1
 // 2
@@ -62,7 +62,7 @@ for(let i=1;i<=3;i++)
 {
   setTimeout(function(){
     console.log(i);
-  },1000);
+  },0);
 }
 // 1
 // 2
@@ -74,7 +74,7 @@ for(var i=1;i<=3;i++) {
   (function(i){
     setTimeout(function(){
     console.log(i);
-  },1000);
+  },0);
   })(i);
 }
 // 1
