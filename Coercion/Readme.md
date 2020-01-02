@@ -3,4 +3,3 @@
 2.[ NaN](./NaN.md) </br>
 3.[ Negative Zero](./negZero.md) </br>
 4.[ Cases of Coercion](./CasesOfCoercion.md) </br>
-5.[ Static Typing](./StaticTyping.md) </br>
