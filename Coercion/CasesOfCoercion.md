@@ -1,4 +1,5 @@
 # Cases Of Coercion
+* Plus operation with a string returns string.
 
 ```javascript
 var a;
@@ -8,8 +9,13 @@ console.log(typeof a); // number
 a = 1+"";
 console.log(a); // "1"
 console.log(typeof a); // string
+```
+</br>
 
+* Identifiers are coerced to string in back ticks in console.log (toString() called for the non-string values)
+```javascript
 console.log(`Hello ${a}`); // type coercion taking place here (toString() called for the non-string values)
+```
 
 var numStringVar = "121";
 function plusOne(num) {
