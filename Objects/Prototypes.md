@@ -40,12 +40,16 @@ Let us understand how this chain is built by the JS engine.
 </br></br>
 Firstly, even before the execution starts, i.e. at line zero, JS creates the __Object__ function which has an object linked to it which can be referenced using the __.prototype__ property (`Object.prototype`) which in-turn has a __.constructor__ property which references back to __Object__. 
 </br></br>
-When the __Workshop__ constructor function is declared, an empty object is created which can be referenced via __Workshop.prototype__. This object is internally linked to the prototype of __Object__. Line 5 adds the ask method to the prototype of the __Workshop__ constructor function.
+When the __Workshop__ constructor function is declared, an empty object is created which can be referenced via ```Workshop.prototype```. This object is internally linked to the prototype of __Object__. Line 5 adds the ask method to the prototype of the ```Workshop``` constructor function.
 </br></br>
-The objects (`deepJS` and `reactJS`) are instantiated via the `new` keyword which:
+The objects (```deepJS``` and ```reactJS```) are instantiated via the __new__ keyword which:
+
 * Creates a brand new empty object
+
 * Links this object to the prototype of is constructor function
+
 * Call the constructor function with this set to the new object
+
 * If the function does not return an object, assume return of this.
 
 So when the `deepJS.ask(parameter)` line runs, JS looks for the `ask` method in the `deepJS` object. It doesn’t find it there so it moves one level up the prototype chain to the prototype of the __Workshop__ where it finds the __ask__ method.
