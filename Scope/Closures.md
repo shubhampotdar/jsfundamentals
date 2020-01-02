@@ -43,8 +43,7 @@ for(var i=1;i<=3;i++)
 // 4
 // 4
 ```
-
-But if in every iteration, a let(block-scoped) j is assigned to i. Then:
+Here is a scoped based solution to the above problem:  a let(block-scoped) j is assigned to i. Then:
 ``` javascript
 for(var i=1;i<=3;i++)
 {
@@ -69,7 +68,7 @@ for(let i=1;i<=3;i++)
 // 2
 // 3
 ```
-Another approach to solving this problem is through an IIFE :
+The closure based  approach to solving this problem is through an IIFE :
 ```javascript
 for(var i=1;i<=3;i++) {
   (function(i){
