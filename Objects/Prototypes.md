@@ -61,7 +61,6 @@ The objects ```deepJS``` and ```reactJS``` are instantiated via the __new__ keyw
 
 So when the `deepJS.ask(parameter)` line runs, JS looks for the `ask` method in the `deepJS` object. It doesn’t find it there so it moves one level up the prototype chain to the prototype of the __Workshop__ where it finds the __ask__ method.
 
-
 At the top level of the prototype chain is hierarchy is the __Object__ object. It's own prototype points to null as there is nothing above it.
 
 ```javascript
