@@ -1,7 +1,8 @@
 # typeof operator
-Returns type of the string </br>
-Return type is a non-empty string
+* Returns type of the string </br>
+* Return type is a non-empty string
 </br>
+
 ```javascript
 var nullVar = null;
 console.log("typeof null variable " + typeof nullVar); //returns "object" - to unset a number use undefined and to unset an object use null
