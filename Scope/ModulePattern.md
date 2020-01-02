@@ -2,8 +2,7 @@
 Modules encapsulate data and behavior (methods) together. The state (data) of a module is held by its methods via closure.
 </br></br>
 ### Classic/Revealing Module Pattern
-An IIFE is used so it is a singleton module.
-
+Javascript does not have the typical 'private' and 'public' specifiers. However, you can achieve the same effect through the clever application of Javascript's function-level scoping. The Revealing Module pattern is a design pattern for Javascript applications that elegantly solves this problem. The central principle of the Revealing Module pattern is that all functionality and variables should be hidden unless deliberately exposed.
 ```javascript
 // Classic/Revealing module pattern
 var workshop = (function Module(teacher) {
