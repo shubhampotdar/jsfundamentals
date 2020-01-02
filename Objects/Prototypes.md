@@ -27,6 +27,7 @@ The __ask()__ function could be added to the constructor function directly inste
 </br>
 To understand the benefit of using prototypes refer the following article:
 [A Beginner's Guide to JavaScript's prototype](https://tylermcginnis.com/beginners-guide-to-javascript-prototype/)
+
 </br>
 
 The prototype chain for the above snippet is shown below:
