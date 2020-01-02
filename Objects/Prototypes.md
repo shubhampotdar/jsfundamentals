@@ -28,6 +28,13 @@ The prototype chain for the above snippet is shown below:
 
 <img src="./prototypeChain.png">
 
+At the top level of the prototype chain is hierarchy is the __Object__ object. It's own prototype points to null as there is nothing above it.
+
+```javascript
+console.log(Object.prototype);
+//null
+```
+
 </br></br>
 
 ## Dunder proto
