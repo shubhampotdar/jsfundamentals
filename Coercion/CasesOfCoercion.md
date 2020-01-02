@@ -35,7 +35,7 @@ console.log(plusOne(+numStringVar)); //returns 122
 
 </br>
 
-* Coerces back to number as '-' operator is used.
+* Coerces back to number as __'-'__ operator is used.
 ```javascript
 function minusOne(num) {
 	return num-1;					// automatically coerces to number as '-' operator is used
@@ -57,7 +57,7 @@ if(whiteSpaceVar)         // " " is whitespace which is not a falsy value so con
 
 </br>
 
-* Boxing - primitive types being implicitly coerced to object counterpart
+* __Boxing__ - primitive types being implicitly coerced to object counterpart
 ```javascript
 console.log(stringVar.length); //string is a primitive type but yet has methods as boxing takes place
 ```
