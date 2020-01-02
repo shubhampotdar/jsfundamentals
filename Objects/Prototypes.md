@@ -46,11 +46,8 @@ When the __Workshop__ constructor function is declared, an empty object is creat
 ```Workshop```
 constructor function.
 </br></br>
-The objects (```deepJS```
-and 
-
-```reactJS```
-) are instantiated via the __new__ keyword which:
+The objects ```deepJS``` and ```reactJS```
+ are instantiated via the __new__ keyword which:
 
 * Creates a brand new empty object
 
