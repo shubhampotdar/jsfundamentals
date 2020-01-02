@@ -30,6 +30,25 @@ clf(); //bbb
 ```
 </br>
 
+Here is another example to understand closures better:
+```javascript
+function adder(x) {
+  return function(y) {
+    return x + y;
+  };
+}
+
+var add5 = adder(5);
+
+console.log(add5(4)); // 9
+
+var add6 = adder(6);
+
+console.log(add6(7)); // 13
+
+console.log(add5(21)); // 26
+```
+</br></br>
 ### Example of closure with for loop
 
 ```javascript
