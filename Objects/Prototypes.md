@@ -38,7 +38,7 @@ The prototype chain for the above snippet is shown below:
 
 </br>
 Let us understand how this chain is built by the JS engine.
-</br>
+</br></br>
 
 Firstly, even before the execution starts, i.e. at line zero, JS creates the __Object__ function which has an object linked to it which can be referenced using the __.prototype__ property (`Object.prototype`) which in-turn has a __.constructor__ property which references back to __Object__. 
 
