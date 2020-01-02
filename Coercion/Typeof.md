@@ -6,7 +6,7 @@
 ## typeof null
 ```javascipt
 var nullVar = null;
-console.log("typeof null variable " + typeof nullVar); //returns "object"
+console.log("typeof null variable " + typeof nullVar); // object
 ```
 So __null__ can be used to unset an object (similarly __undefined__ can be used to unset a number).
 
@@ -15,7 +15,7 @@ So __null__ can be used to unset an object (similarly __undefined__ can be used 
 ## typeof on a function
 ```javascript
 var funcVar = function() {};
-console.log("typeof function " + typeof funcVar); //returns "function"
+console.log("typeof function " + typeof funcVar); // function
 ```
 </br></br>
 
@@ -31,6 +31,8 @@ console.log(typeof singleElementArray); // object
 
 ## Other examples:
 ```javascript
-console.log(typeof " "); // returns string
-console.log( typeof NaN ); // returns a number
+console.log(typeof " "); // string
+console.log( typeof NaN ); // number
+var aa;
+console.log(typeof aa); // undefined
 ```
