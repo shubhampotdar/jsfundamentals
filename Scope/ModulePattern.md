@@ -66,7 +66,7 @@ musicModule.songList.push('White Rabbit'); // undefined error
 </br></br>
 
 ### Module Factory
-
+The revealing pattern can be further modified to create a module factory.
 ```javascript
 //Module Factory 
 function WorkshopModule(teacher) {
