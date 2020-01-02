@@ -21,7 +21,7 @@ reactJS.ask("why");
 ```
 The name of a constructor function usually starts with an uppercase letter to draw the distinction between regular functions. 
 Here the __Workshop()__ method is the function constructor. All the data members are declared here. Every function has an object associated with it called its prototype (Function.prototype). We can add methods to this prototype. In the above snippet, the ask() method is added to the prototype of the Workshop constructor function. This constructor function can be used to instantiate objects. 
-</br>
+</br> </br>
 To understand the benefit of using prototypes refer the following article:
 [A Beginner's Guide to JavaScript's prototype](https://tylermcginnis.com/beginners-guide-to-javascript-prototype/)
 </br>
