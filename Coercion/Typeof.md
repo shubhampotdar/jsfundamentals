@@ -3,6 +3,14 @@
 * Return type is a non-empty string
 </br>
 
+## typeof null
+```javascipt
+var nullVar = null;
+console.log("typeof null variable " + typeof nullVar); //returns "object"
+```
+So __null__ can be used to unset an object.
+
+
 ```javascript
 var nullVar = null;
 console.log("typeof null variable " + typeof nullVar); //returns "object" - to unset a number use undefined and to unset an object use null
