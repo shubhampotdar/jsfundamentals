@@ -64,5 +64,8 @@ console.log(stringVar.length); //string is a primitive type but yet has methods 
 
 </br>
 
-* 
+* Empty string and space are not equal.
+```javascript
+console.log("" == " "); // returns false
+```
 
