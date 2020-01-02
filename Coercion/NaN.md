@@ -1,23 +1,40 @@
-# NaN - invalid number (~~Not a number~~)
+# NaN 
+__NaN__ should be considered as an invalid number rather than Not a Number. This can be seen by performing the __typeof__ operation on NaN which returns "number".
+
+</br>
+
+## isNaN()
+Determines whether the passed value is NaN. It coerces the value to number before checking.
+```javascript
+var numberVar = 2;
+console.log ("isNaN for number -  " + isNaN(numberVar)); // returns false
+
+var stringVar = "Hello";
+console.log("isNAN for string - " + isNaN(stringVar)); // returns true
+```
+</br></br>
+
+Strings when coerced to a number return __NaN__.
+```javascript
+var stringVar = "Hello";
+console.log(Number(stringVar)); // NaN 
+```
+Except,
+```javascript
+console.log(Number(" ")); // returns 0
+console.log(isNaN(" ")); // returns false
+```
+This is because isNaN() first coerces it to a number and so a empty string first changes to zero which is a number
+Refer: <https://stackoverflow.com/questions/825402/why-does-isnan-string-with-spaces-equal-false>
+
 * Only value in JS which is not equal to itself </br>
 * A NaN number with any mathematical operation results in NaN </br>
 * Strings when coerced to a number return NaN </br>
 
 
 ```javascript
-var numberVar = 2;
-console.log ("isNaN for number -  " + isNaN(numberVar)); // returns false
 
-// isNaN() coerces value to number before checking
-var stringVar = "Hello";
-console.log("isNAN for string - " + isNaN(stringVar)); // returns true
-var na = Number("n/a");
-console.log("Number() function on a string - " + Number(stringVar)); // returns NaN - strings when coerced to a number return NaN
-console.log(isNaN(na)); // returns true
-console.log(Number(" ")); // returns 0
-console.log(isNaN(" ")); // returns false - because isNaN() first coerces it to a number and so a empty string first changes to zero which is a number
 
-// refer - https://stackoverflow.com/questions/825402/why-does-isnan-string-with-spaces-equal-false
 
 var octalVar = "0o46";
 console.log("isNaN for octal representation -  " + isNaN(octalVar)); // returns false 
