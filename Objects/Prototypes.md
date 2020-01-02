@@ -23,6 +23,7 @@ The name of a constructor function usually starts with an uppercase letter to dr
 Here the __Workshop()__ method is the function constructor. All the data members are declared here. Every function has an object associated with it called its prototype (Function.prototype). We can add methods to this prototype. In the above snippet, the __ask()__ method is added to the prototype of the Workshop constructor function. This constructor function can be used to instantiate objects. </br>
 </br>
 The __ask()__ function could be added to the constructor function directly instead of adding it to its prototype, but that would lead to the creation of a new ask method for every object which is unnecessary waste of memory.
+
 </br> </br>
 To understand the benefit of using prototypes refer the following article:
 [A Beginner's Guide to JavaScript's prototype](https://tylermcginnis.com/beginners-guide-to-javascript-prototype/)
@@ -38,10 +39,14 @@ The prototype chain for the above snippet is shown below:
 </br>
 Let us understand how this chain is built by the JS engine.
 </br></br>
+
 Firstly, even before the execution starts, i.e. at line zero, JS creates the __Object__ function which has an object linked to it which can be referenced using the __.prototype__ property (`Object.prototype`) which in-turn has a __.constructor__ property which references back to __Object__. 
+
 </br></br>
+
 When the __Workshop__ constructor function is declared, an empty object is created which can be referenced via
 ```Workshop.prototype```. This object is internally linked to the prototype of __Object__. Line 5 adds the ask method to the prototype of the ```Workshop``` constructor function.
+
 </br></br>
 
 The objects ```deepJS``` and ```reactJS``` are instantiated via the __new__ keyword which:
