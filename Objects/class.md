@@ -106,4 +106,4 @@ setTimeout(aa.ask,100,"this fixed");
 ```
 
 ### Other resources:
-* [Static methods](https://javascript.info/static-properties-methods)
+*  Static methods -  <https://javascript.info/static-properties-methods> , <https://medium.com/@yyang0903/static-objects-static-methods-in-es6-1c026dbb8bb1>
