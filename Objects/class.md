@@ -104,3 +104,6 @@ var aa = new Workshop("shu");
 setTimeout(aa.ask,100,"this fixed");
 // shu this fixed
 ```
+
+### Other resources:
+* [Static methods](https://javascript.info/static-properties-methods)
