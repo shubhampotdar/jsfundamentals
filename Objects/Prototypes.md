@@ -145,6 +145,7 @@ function AnotherWorkshop(teacher) {
 }
 
 AnotherWorkshop.prototype = Object.create(Workshop.prototype);
+AnotherWorkshop.prototype.constructor = AnotherWorkshop; // to make the constructor property of the prototype point to the correct function 
 
 AnotherWorkshop.prototype.speakUp = function(msg) {
   this.ask(msg.toUpperCase());
